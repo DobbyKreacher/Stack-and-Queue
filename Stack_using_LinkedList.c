@@ -18,8 +18,8 @@ void traversal(struct Node *ptr)
 
 int isFull(struct Node *top)
 {
-    struct Node *p = (struct Node *)malloc(sizeof(struct Node));
-    if (p == NULL)
+    struct Node *top = (struct Node *)malloc(sizeof(struct Node));
+    if (top == NULL)
     {
         return 1;
     }
@@ -88,7 +88,6 @@ int main()
     top = push(top, 11);
     top = push(top, 12);
     top = push(top, 15);
-    // top = pop(top);
     traversal(top);
 
     printf("Value at position 3 is %d\n", peek(top, 3));
